@@ -4,15 +4,30 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, '/index.html')
+    context = {
+        'title': 'Index',
+        'header': '',
+
+    }
+    return render(request, 'mainapp/index.html', context)
 
 
 def products(request):
-    return render(request, '/products.html')
+    context = {
+        'title': 'products',
+        'header': '',
+
+    }
+    return render(request, 'mainapp/products.html', context)
 
 
 def contact(request):
-    return render(request, '/contact.html')
+    context = {
+        'title': 'contact',
+        'header': '',
+
+    }
+    return render(request, 'mainapp/contact.html', context)
 
 
 
