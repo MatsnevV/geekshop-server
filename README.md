@@ -14,3 +14,7 @@ $
 $
 $
 $
+
+source venv/bin/activate
+cd geekshop/
+python3  manage.py runserver
